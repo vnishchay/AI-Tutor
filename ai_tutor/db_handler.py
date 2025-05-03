@@ -11,7 +11,7 @@ class DatabaseHandler:
     
     def __init__(self):
         """Initialize MongoDB connection."""
-        mongodb_uri = os.getenv('MONGO_DB_URI') or os.getenv('MONGODB_URI') or 'mongodb+srv://nishi:Gtn02fc2NHW9F4Gj@cluster0.zjfve.mongodb.net/ai_tutor_db?retryWrites=true&w=majority'
+        mongodb_uri = os.getenv('MONGO_DB_URI') or os.getenv('MONGODB_URI') or 'mongodb+srv://nishi:W9F4Gj@cluster0.zjfve.mongodb.net/ai_tutor_db?retryWrites=true&w=majority'
         self.client = MongoClient(mongodb_uri)
         self.db = self.client['ai_tutor_db']
         self.students = self.db['students']
